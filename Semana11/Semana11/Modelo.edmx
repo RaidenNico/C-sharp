@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BDTardeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Alumnos">
+          <Key>
+            <PropertyRef Name="DNI" />
+          </Key>
+          <Property Name="DNI" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="APA" Type="varchar" MaxLength="20" />
+          <Property Name="AMA" Type="varchar" MaxLength="20" />
+          <Property Name="NOM" Type="varchar" MaxLength="30" />
+          <Property Name="CODC" Type="varchar" MaxLength="5" />
+          <Property Name="CODT" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="Carreras">
+          <Key>
+            <PropertyRef Name="CODC" />
+          </Key>
+          <Property Name="CODC" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="NOMC" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Turno">
+          <Key>
+            <PropertyRef Name="CODT" />
+          </Key>
+          <Property Name="CODT" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="NOMT" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="R_1">
+          <End Role="Carreras" Type="Self.Carreras" Multiplicity="0..1" />
+          <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Carreras">
+              <PropertyRef Name="CODC" />
+            </Principal>
+            <Dependent Role="Alumnos">
+              <PropertyRef Name="CODC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="R_2">
+          <End Role="Turno" Type="Self.Turno" Multiplicity="0..1" />
+          <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Turno">
+              <PropertyRef Name="CODT" />
+            </Principal>
+            <Dependent Role="Alumnos">
+              <PropertyRef Name="CODT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BDTardeModelStoreContainer">
+          <EntitySet Name="Alumnos" EntityType="Self.Alumnos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Carreras" EntityType="Self.Carreras" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="R_1" Association="Self.R_1">
+            <End Role="Carreras" EntitySet="Carreras" />
+            <End Role="Alumnos" EntitySet="Alumnos" />
+          </AssociationSet>
+          <AssociationSet Name="R_2" Association="Self.R_2">
+            <End Role="Turno" EntitySet="Turno" />
+            <End Role="Alumnos" EntitySet="Alumnos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BDTardeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Alumnos">
+          <Key>
+            <PropertyRef Name="DNI" />
+          </Key>
+          <Property Name="DNI" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="APA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="AMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NOM" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CODC" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="CODT" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Carreras" Relationship="Self.R_1" FromRole="Alumnos" ToRole="Carreras" />
+          <NavigationProperty Name="Turno" Relationship="Self.R_2" FromRole="Alumnos" ToRole="Turno" />
+        </EntityType>
+        <EntityType Name="Carreras">
+          <Key>
+            <PropertyRef Name="CODC" />
+          </Key>
+          <Property Name="CODC" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NOMC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Alumnos" Relationship="Self.R_1" FromRole="Carreras" ToRole="Alumnos" />
+        </EntityType>
+        <EntityType Name="Turno">
+          <Key>
+            <PropertyRef Name="CODT" />
+          </Key>
+          <Property Name="CODT" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NOMT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Alumnos" Relationship="Self.R_2" FromRole="Turno" ToRole="Alumnos" />
+        </EntityType>
+        <Association Name="R_1">
+          <End Role="Carreras" Type="Self.Carreras" Multiplicity="0..1" />
+          <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Carreras">
+              <PropertyRef Name="CODC" />
+            </Principal>
+            <Dependent Role="Alumnos">
+              <PropertyRef Name="CODC" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="R_2">
+          <End Role="Turno" Type="Self.Turno" Multiplicity="0..1" />
+          <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Turno">
+              <PropertyRef Name="CODT" />
+            </Principal>
+            <Dependent Role="Alumnos">
+              <PropertyRef Name="CODT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BDTardeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Alumnos" EntityType="Self.Alumnos" />
+          <EntitySet Name="Carreras" EntityType="Self.Carreras" />
+          <EntitySet Name="Turno" EntityType="Self.Turno" />
+          <AssociationSet Name="R_1" Association="Self.R_1">
+            <End Role="Carreras" EntitySet="Carreras" />
+            <End Role="Alumnos" EntitySet="Alumnos" />
+          </AssociationSet>
+          <AssociationSet Name="R_2" Association="Self.R_2">
+            <End Role="Turno" EntitySet="Turno" />
+            <End Role="Alumnos" EntitySet="Alumnos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BDTardeModelStoreContainer" CdmEntityContainer="BDTardeEntities">
+          <EntitySetMapping Name="Alumnos">
+            <EntityTypeMapping TypeName="BDTardeModel.Alumnos">
+              <MappingFragment StoreEntitySet="Alumnos">
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="APA" ColumnName="APA" />
+                <ScalarProperty Name="AMA" ColumnName="AMA" />
+                <ScalarProperty Name="NOM" ColumnName="NOM" />
+                <ScalarProperty Name="CODC" ColumnName="CODC" />
+                <ScalarProperty Name="CODT" ColumnName="CODT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Carreras">
+            <EntityTypeMapping TypeName="BDTardeModel.Carreras">
+              <MappingFragment StoreEntitySet="Carreras">
+                <ScalarProperty Name="CODC" ColumnName="CODC" />
+                <ScalarProperty Name="NOMC" ColumnName="NOMC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Turno">
+            <EntityTypeMapping TypeName="BDTardeModel.Turno">
+              <MappingFragment StoreEntitySet="Turno">
+                <ScalarProperty Name="CODT" ColumnName="CODT" />
+                <ScalarProperty Name="NOMT" ColumnName="NOMT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

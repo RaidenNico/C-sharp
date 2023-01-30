@@ -1,0 +1,14 @@
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\bin\Debug\Proyecto de Bodega.exe.config
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\bin\Debug\Proyecto de Bodega.exe
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\bin\Debug\Proyecto de Bodega.pdb
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto de Bodega.csproj.AssemblyReference.cache
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto de Bodega.csproj.SuggestedBindingRedirects.cache
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto_de_Bodega.Properties.Resources.resources
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto de Bodega.csproj.GenerateResource.cache
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto de Bodega.csproj.CoreCompileInputs.cache
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto de Bodega.exe
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto de Bodega.pdb
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto_de_Bodega.frmLogin.resources
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto_de_Bodega.frmPrincipal.resources
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto_de_Bodega.frmProductos.resources
+C:\Visual Studio\Clases\Programa Bodega\Proyecto de Bodega\Proyecto de Bodega\obj\Debug\Proyecto_de_Bodega.frmProveedores.resources

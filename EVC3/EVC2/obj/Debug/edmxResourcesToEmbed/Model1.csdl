@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDEmpresaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMPLEADO">
+    <Key>
+      <PropertyRef Name="empleado_id" />
+    </Key>
+    <Property Name="empleado_id" Type="Int32" Nullable="false" />
+    <Property Name="empleado_paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="empleado_materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="empleado_nombres" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="empleado_edad" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BDEmpresa" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMPLEADO" EntityType="Self.EMPLEADO" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BDTardeModelStoreContainer" CdmEntityContainer="BDTardeEntities">
+    <EntitySetMapping Name="Alumnos">
+      <EntityTypeMapping TypeName="BDTardeModel.Alumnos">
+        <MappingFragment StoreEntitySet="Alumnos">
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="APA" ColumnName="APA" />
+          <ScalarProperty Name="AMA" ColumnName="AMA" />
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+          <ScalarProperty Name="CODC" ColumnName="CODC" />
+          <ScalarProperty Name="CODT" ColumnName="CODT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carreras">
+      <EntityTypeMapping TypeName="BDTardeModel.Carreras">
+        <MappingFragment StoreEntitySet="Carreras">
+          <ScalarProperty Name="CODC" ColumnName="CODC" />
+          <ScalarProperty Name="NOMC" ColumnName="NOMC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Turno">
+      <EntityTypeMapping TypeName="BDTardeModel.Turno">
+        <MappingFragment StoreEntitySet="Turno">
+          <ScalarProperty Name="CODT" ColumnName="CODT" />
+          <ScalarProperty Name="NOMT" ColumnName="NOMT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

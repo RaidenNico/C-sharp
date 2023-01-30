@@ -1,0 +1,48 @@
+D:\IDAT\C#\EncargoBodega\bin\Debug\EncargoBodega.exe.config
+D:\IDAT\C#\EncargoBodega\bin\Debug\EncargoBodega.exe
+D:\IDAT\C#\EncargoBodega\bin\Debug\EncargoBodega.pdb
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.csproj.AssemblyReference.cache
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.csproj.SuggestedBindingRedirects.cache
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.frmPrincipal.resources
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.Properties.Resources.resources
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.csproj.GenerateResource.cache
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.csproj.CoreCompileInputs.cache
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.exe
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.pdb
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.frmLogin.resources
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.frmAgProducto.resources
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.frmAgProv.resources
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\bin\Debug\EncargoBodega.exe.config
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\bin\Debug\EncargoBodega.exe
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\bin\Debug\EncargoBodega.pdb
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.AssemblyReference.cache
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmLogin.resources
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmAgProducto.resources
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmAgProv.resources
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmPrincipal.resources
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.Properties.Resources.resources
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.GenerateResource.cache
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.CoreCompileInputs.cache
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.exe
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.pdb
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.AgregarClien.resources
+C:\Users\Jesus\Downloads\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.AgregarVent.resources
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\bin\Debug\EncargoBodega.exe.config
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\bin\Debug\EncargoBodega.exe
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\bin\Debug\EncargoBodega.pdb
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.AssemblyReference.cache
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.SuggestedBindingRedirects.cache
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.AgregarClien.resources
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmLogin.resources
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmAgProducto.resources
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmAgProv.resources
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmPrincipal.resources
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.Properties.Resources.resources
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.GenerateResource.cache
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.csproj.CoreCompileInputs.cache
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.exe
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.pdb
+C:\Cesar\CESAR\IDAT\CICLO3\HERRAMIENTAS DE PROGAMACION\EncargoBodega\EncargoBodega\obj\Debug\EncargoBodega.frmAgregarVenta.resources
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.AgregarClien.resources
+D:\IDAT\C#\EncargoBodega\obj\Debug\EncargoBodega.frmAgregarVenta.resources

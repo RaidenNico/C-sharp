@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pablito_storeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Codc" />
+    </Key>
+    <Property Name="Codc" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Nomc" Type="varchar" MaxLength="40" />
+    <Property Name="Dirc" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'pablito_store.dbo.DetalleFactura' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="DetalleFactura">
+    <Key>
+      <PropertyRef Name="NumFac" />
+      <PropertyRef Name="Codp" />
+    </Key>
+    <Property Name="NumFac" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="Codp" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Cantidad" Type="real" />
+    <Property Name="PUnitario" Type="real" />
+    <Property Name="Importe" Type="real" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="NumFac" />
+    </Key>
+    <Property Name="NumFac" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="FechaFac" Type="smalldatetime" />
+    <Property Name="TotalFac" Type="real" />
+    <Property Name="IgvFac" Type="real" />
+    <Property Name="TotalPago" Type="real" />
+    <Property Name="Codc" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Codv" Type="varchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pregunta">
+    <Key>
+      <PropertyRef Name="pregunta_id" />
+    </Key>
+    <Property Name="pregunta_id" Type="int" Nullable="false" />
+    <Property Name="pregunta_elegir" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Codp" />
+    </Key>
+    <Property Name="Codp" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Nomp" Type="varchar" MaxLength="50" />
+    <Property Name="Punp" Type="real" />
+    <Property Name="Stockp" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="usuario_id" />
+    </Key>
+    <Property Name="usuario_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usuario_email" Type="varchar" MaxLength="30" />
+    <Property Name="usuario_password" Type="varchar" MaxLength="30" />
+    <Property Name="pregunta_id" Type="int" Nullable="false" />
+    <Property Name="usuario_respuesta" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="Vendedor">
+    <Key>
+      <PropertyRef Name="Codv" />
+    </Key>
+    <Property Name="Codv" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Datv" Type="varchar" MaxLength="50" />
+    <Property Name="Dirv" Type="varchar" MaxLength="50" />
+    <Property Name="Dniv" Type="varchar" MaxLength="8" />
+    <Property Name="Sexv" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <Association Name="fk_DetalleFactura_Factura_1">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="NumFac" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="NumFac" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DetalleFactura_Producto_1">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Codp" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="Codp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Factura_Cliente_1">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Codc" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="Codc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Factura_Vendedor_1">
+    <End Role="Vendedor" Type="Self.Vendedor" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedor">
+        <PropertyRef Name="Codv" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="Codv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_pregunta_id_usuario">
+    <End Role="Pregunta" Type="Self.Pregunta" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pregunta">
+        <PropertyRef Name="pregunta_id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="pregunta_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="pablito_storeModelStoreContainer">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pregunta" EntityType="Self.Pregunta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendedor" EntityType="Self.Vendedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetalleFactura" EntityType="Self.DetalleFactura" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DetalleFactura].[NumFac] AS [NumFac], 
+    [DetalleFactura].[Codp] AS [Codp], 
+    [DetalleFactura].[Cantidad] AS [Cantidad], 
+    [DetalleFactura].[PUnitario] AS [PUnitario], 
+    [DetalleFactura].[Importe] AS [Importe]
+    FROM [dbo].[DetalleFactura] AS [DetalleFactura]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="fk_DetalleFactura_Factura_1" Association="Self.fk_DetalleFactura_Factura_1">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DetalleFactura_Producto_1" Association="Self.fk_DetalleFactura_Producto_1">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Factura_Cliente_1" Association="Self.fk_Factura_Cliente_1">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Factura_Vendedor_1" Association="Self.fk_Factura_Vendedor_1">
+      <End Role="Vendedor" EntitySet="Vendedor" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_pregunta_id_usuario" Association="Self.fk_pregunta_id_usuario">
+      <End Role="Pregunta" EntitySet="Pregunta" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

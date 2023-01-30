@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bdSistemasModelStoreContainer" CdmEntityContainer="bdSistemasEntities">
+    <EntitySetMapping Name="Alumnos">
+      <EntityTypeMapping TypeName="bdSistemasModel.Alumnos">
+        <MappingFragment StoreEntitySet="Alumnos">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="APA" ColumnName="APA" />
+          <ScalarProperty Name="AMA" ColumnName="AMA" />
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDTardeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Alumnos">
+    <Key>
+      <PropertyRef Name="DNI" />
+    </Key>
+    <Property Name="DNI" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="APA" Type="varchar" MaxLength="20" />
+    <Property Name="AMA" Type="varchar" MaxLength="20" />
+    <Property Name="NOM" Type="varchar" MaxLength="30" />
+    <Property Name="CODC" Type="varchar" MaxLength="5" />
+    <Property Name="CODT" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="Carreras">
+    <Key>
+      <PropertyRef Name="CODC" />
+    </Key>
+    <Property Name="CODC" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NOMC" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="CODT" />
+    </Key>
+    <Property Name="CODT" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NOMT" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="R_1">
+    <End Role="Carreras" Type="Self.Carreras" Multiplicity="0..1" />
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carreras">
+        <PropertyRef Name="CODC" />
+      </Principal>
+      <Dependent Role="Alumnos">
+        <PropertyRef Name="CODC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_2">
+    <End Role="Turno" Type="Self.Turno" Multiplicity="0..1" />
+    <End Role="Alumnos" Type="Self.Alumnos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="CODT" />
+      </Principal>
+      <Dependent Role="Alumnos">
+        <PropertyRef Name="CODT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BDTardeModelStoreContainer">
+    <EntitySet Name="Alumnos" EntityType="Self.Alumnos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Carreras" EntityType="Self.Carreras" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="R_1" Association="Self.R_1">
+      <End Role="Carreras" EntitySet="Carreras" />
+      <End Role="Alumnos" EntitySet="Alumnos" />
+    </AssociationSet>
+    <AssociationSet Name="R_2" Association="Self.R_2">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="Alumnos" EntitySet="Alumnos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

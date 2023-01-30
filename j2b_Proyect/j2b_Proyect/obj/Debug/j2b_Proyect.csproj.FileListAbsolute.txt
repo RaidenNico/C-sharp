@@ -1,0 +1,54 @@
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.exe.config
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.exe
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.pdb
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.AssemblyReference.cache
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.Properties.Resources.resources
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.GenerateResource.cache
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.CoreCompileInputs.cache
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.exe
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.pdb
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmLogin.resources
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\bin\Debug\aa\j2b_Proyect.resources.dll
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmLogin.aa.resources
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\aa\j2b_Proyect.resources.dll
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmRegistro.resources
+C:\Users\ASKcorp\Desktop\Visual Studio\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmPrincipal.resources
+C:\visual\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.exe.config
+C:\visual\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.exe
+C:\visual\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.pdb
+C:\visual\j2b_Proyect\j2b_Proyect\bin\Debug\aa\j2b_Proyect.resources.dll
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.AssemblyReference.cache
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.SuggestedBindingRedirects.cache
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmLogin.resources
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmPrincipal.resources
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmRegistro.resources
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.Properties.Resources.resources
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmLogin.aa.resources
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.GenerateResource.cache
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.CoreCompileInputs.cache
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\aa\j2b_Proyect.resources.dll
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.exe
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.pdb
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.FrmInsumo.resources
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.FrmClientes.resources
+C:\visual\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.FrmProv.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.exe.config
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.exe
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\bin\Debug\j2b_Proyect.pdb
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\bin\Debug\aa\j2b_Proyect.resources.dll
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.AssemblyReference.cache
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmLogin.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmPrincipal.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmRegistro.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.FrmInsumo.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.FrmClientes.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.FrmProv.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.Properties.Resources.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.frmLogin.aa.resources
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.GenerateResource.cache
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.csproj.CoreCompileInputs.cache
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\aa\j2b_Proyect.resources.dll
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.exe
+C:\Users\ASKcorp\Downloads\j2b_Proyect\j2b_Proyect\obj\Debug\j2b_Proyect.pdb

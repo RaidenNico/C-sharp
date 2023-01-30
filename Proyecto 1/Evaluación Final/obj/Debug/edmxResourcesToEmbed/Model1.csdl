@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pablito_storeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Codc" />
+    </Key>
+    <Property Name="Codc" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nomc" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Dirc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Factura" Relationship="Self.fk_Factura_Cliente_1" FromRole="Cliente" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="NumFac" />
+    </Key>
+    <Property Name="NumFac" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaFac" Type="DateTime" Precision="0" />
+    <Property Name="TotalFac" Type="Single" />
+    <Property Name="IgvFac" Type="Single" />
+    <Property Name="TotalPago" Type="Single" />
+    <Property Name="Codc" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Codv" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.fk_Factura_Cliente_1" FromRole="Factura" ToRole="Cliente" />
+    <NavigationProperty Name="DetalleFactura" Relationship="Self.fk_DetalleFactura_Factura_1" FromRole="Factura" ToRole="DetalleFactura" />
+    <NavigationProperty Name="Vendedor" Relationship="Self.fk_Factura_Vendedor_1" FromRole="Factura" ToRole="Vendedor" />
+  </EntityType>
+  <EntityType Name="Pregunta">
+    <Key>
+      <PropertyRef Name="pregunta_id" />
+    </Key>
+    <Property Name="pregunta_id" Type="Int32" Nullable="false" />
+    <Property Name="pregunta_elegir" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.fk_pregunta_id_usuario" FromRole="Pregunta" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Codp" />
+    </Key>
+    <Property Name="Codp" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nomp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Punp" Type="Single" />
+    <Property Name="Stockp" Type="Int32" />
+    <NavigationProperty Name="DetalleFactura" Relationship="Self.fk_DetalleFactura_Producto_1" FromRole="Producto" ToRole="DetalleFactura" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="usuario_id" />
+    </Key>
+    <Property Name="usuario_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usuario_email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="pregunta_id" Type="Int32" Nullable="false" />
+    <Property Name="usuario_respuesta" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Pregunta" Relationship="Self.fk_pregunta_id_usuario" FromRole="Usuario" ToRole="Pregunta" />
+  </EntityType>
+  <EntityType Name="Vendedor">
+    <Key>
+      <PropertyRef Name="Codv" />
+    </Key>
+    <Property Name="Codv" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Datv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dirv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dniv" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Sexv" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Factura" Relationship="Self.fk_Factura_Vendedor_1" FromRole="Vendedor" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="DetalleFactura">
+    <Key>
+      <PropertyRef Name="NumFac" />
+      <PropertyRef Name="Codp" />
+    </Key>
+    <Property Name="NumFac" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Codp" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cantidad" Type="Single" />
+    <Property Name="PUnitario" Type="Single" />
+    <Property Name="Importe" Type="Single" />
+    <NavigationProperty Name="Factura" Relationship="Self.fk_DetalleFactura_Factura_1" FromRole="DetalleFactura" ToRole="Factura" />
+    <NavigationProperty Name="Producto" Relationship="Self.fk_DetalleFactura_Producto_1" FromRole="DetalleFactura" ToRole="Producto" />
+  </EntityType>
+  <Association Name="fk_Factura_Cliente_1">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Codc" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="Codc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DetalleFactura_Factura_1">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="NumFac" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="NumFac" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Factura_Vendedor_1">
+    <End Role="Vendedor" Type="Self.Vendedor" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedor">
+        <PropertyRef Name="Codv" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="Codv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_pregunta_id_usuario">
+    <End Role="Pregunta" Type="Self.Pregunta" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pregunta">
+        <PropertyRef Name="pregunta_id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="pregunta_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DetalleFactura_Producto_1">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="DetalleFactura" Type="Self.DetalleFactura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Codp" />
+      </Principal>
+      <Dependent Role="DetalleFactura">
+        <PropertyRef Name="Codp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="pablito_storeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" />
+    <EntitySet Name="Pregunta" EntityType="Self.Pregunta" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Vendedor" EntityType="Self.Vendedor" />
+    <EntitySet Name="DetalleFactura" EntityType="Self.DetalleFactura" />
+    <AssociationSet Name="fk_Factura_Cliente_1" Association="Self.fk_Factura_Cliente_1">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DetalleFactura_Factura_1" Association="Self.fk_DetalleFactura_Factura_1">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Factura_Vendedor_1" Association="Self.fk_Factura_Vendedor_1">
+      <End Role="Vendedor" EntitySet="Vendedor" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_pregunta_id_usuario" Association="Self.fk_pregunta_id_usuario">
+      <End Role="Pregunta" EntitySet="Pregunta" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DetalleFactura_Producto_1" Association="Self.fk_DetalleFactura_Producto_1">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="DetalleFactura" EntitySet="DetalleFactura" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,22 @@
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro_de_Producto.Properties.Resources.resources
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro_de_Producto.Form1.resources
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.GenerateResource.cache
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\bin\Debug\Registro de Producto.exe.config
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\bin\Debug\Registro de Producto.exe
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\bin\Debug\Registro de Producto.pdb
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.exe
+C:\Users\Nicolas\Desktop\Registro de Producto C+\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.pdb
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\bin\Debug\Registro de Producto.exe.config
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\bin\Debug\Registro de Producto.exe
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\bin\Debug\Registro de Producto.pdb
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.AssemblyReference.cache
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro_de_Producto.Properties.Resources.resources
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.GenerateResource.cache
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.csproj.CoreCompileInputs.cache
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.exe
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro de Producto.pdb
+C:\Users\ASKcorp\Downloads\Registro de Producto\Registro de Producto\obj\Debug\Registro_de_Producto.frmRProductos.resources

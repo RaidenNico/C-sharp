@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="pablito_storeModelStoreContainer" CdmEntityContainer="pablito_storeEntities">
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="pablito_storeModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="Codc" ColumnName="Codc" />
+          <ScalarProperty Name="Nomc" ColumnName="Nomc" />
+          <ScalarProperty Name="Dirc" ColumnName="Dirc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura">
+      <EntityTypeMapping TypeName="pablito_storeModel.Factura">
+        <MappingFragment StoreEntitySet="Factura">
+          <ScalarProperty Name="NumFac" ColumnName="NumFac" />
+          <ScalarProperty Name="FechaFac" ColumnName="FechaFac" />
+          <ScalarProperty Name="TotalFac" ColumnName="TotalFac" />
+          <ScalarProperty Name="IgvFac" ColumnName="IgvFac" />
+          <ScalarProperty Name="TotalPago" ColumnName="TotalPago" />
+          <ScalarProperty Name="Codc" ColumnName="Codc" />
+          <ScalarProperty Name="Codv" ColumnName="Codv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pregunta">
+      <EntityTypeMapping TypeName="pablito_storeModel.Pregunta">
+        <MappingFragment StoreEntitySet="Pregunta">
+          <ScalarProperty Name="pregunta_id" ColumnName="pregunta_id" />
+          <ScalarProperty Name="pregunta_elegir" ColumnName="pregunta_elegir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="pablito_storeModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="Codp" ColumnName="Codp" />
+          <ScalarProperty Name="Nomp" ColumnName="Nomp" />
+          <ScalarProperty Name="Punp" ColumnName="Punp" />
+          <ScalarProperty Name="Stockp" ColumnName="Stockp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="pablito_storeModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+          <ScalarProperty Name="usuario_email" ColumnName="usuario_email" />
+          <ScalarProperty Name="usuario_password" ColumnName="usuario_password" />
+          <ScalarProperty Name="pregunta_id" ColumnName="pregunta_id" />
+          <ScalarProperty Name="usuario_respuesta" ColumnName="usuario_respuesta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendedor">
+      <EntityTypeMapping TypeName="pablito_storeModel.Vendedor">
+        <MappingFragment StoreEntitySet="Vendedor">
+          <ScalarProperty Name="Codv" ColumnName="Codv" />
+          <ScalarProperty Name="Datv" ColumnName="Datv" />
+          <ScalarProperty Name="Dirv" ColumnName="Dirv" />
+          <ScalarProperty Name="Dniv" ColumnName="Dniv" />
+          <ScalarProperty Name="Sexv" ColumnName="Sexv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleFactura">
+      <EntityTypeMapping TypeName="pablito_storeModel.DetalleFactura">
+        <MappingFragment StoreEntitySet="DetalleFactura">
+          <ScalarProperty Name="NumFac" ColumnName="NumFac" />
+          <ScalarProperty Name="Codp" ColumnName="Codp" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="PUnitario" ColumnName="PUnitario" />
+          <ScalarProperty Name="Importe" ColumnName="Importe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

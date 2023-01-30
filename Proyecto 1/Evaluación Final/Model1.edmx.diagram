@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fffae05080df4bb0a67bd0e22add9804" Name="Diagram1">
+        <EntityTypeShape EntityType="pablito_storeModel.Cliente" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="pablito_storeModel.Factura" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="pablito_storeModel.Pregunta" Width="1.5" PointX="5.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="pablito_storeModel.Producto" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="pablito_storeModel.Usuario" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="pablito_storeModel.Vendedor" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="pablito_storeModel.DetalleFactura" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="pablito_storeModel.fk_Factura_Cliente_1" ManuallyRouted="false" />
+        <AssociationConnector Association="pablito_storeModel.fk_DetalleFactura_Factura_1" ManuallyRouted="false" />
+        <AssociationConnector Association="pablito_storeModel.fk_Factura_Vendedor_1" ManuallyRouted="false" />
+        <AssociationConnector Association="pablito_storeModel.fk_pregunta_id_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="pablito_storeModel.fk_DetalleFactura_Producto_1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
