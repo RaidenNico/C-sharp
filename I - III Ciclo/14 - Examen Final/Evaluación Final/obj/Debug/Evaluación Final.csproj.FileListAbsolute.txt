@@ -1,0 +1,46 @@
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\bin\Debug\Evaluación Final.exe.config
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\bin\Debug\Evaluación Final.exe
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\bin\Debug\Evaluación Final.pdb
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\bin\Debug\EntityFramework.dll
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\bin\Debug\EntityFramework.xml
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación Final.csproj.AssemblyReference.cache
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación Final.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.Properties.Resources.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación Final.csproj.GenerateResource.cache
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación Final.csproj.CoreCompileInputs.cache
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación Final.csproj.CopyComplete
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación Final.exe
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación Final.pdb
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmCliente.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmVendedor.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmProducto.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmFactura.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmLogin.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmRegistrarUsuario.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmMain.resources
+C:\Users\ASKCORP\source\repos\Evaluación Final\Evaluación Final\obj\Debug\Evaluación_Final.frmRecuperarAccount.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\bin\Debug\Evaluación Final.exe.config
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\bin\Debug\Evaluación Final.exe
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\bin\Debug\Evaluación Final.pdb
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\bin\Debug\EntityFramework.dll
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\bin\Debug\EntityFramework.xml
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación Final.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación Final.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmCliente.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmVendedor.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmProducto.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmFactura.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmLogin.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmRegistrarUsuario.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmMain.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.frmRecuperarAccount.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación_Final.Properties.Resources.resources
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación Final.csproj.GenerateResource.cache
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación Final.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación Final.csproj.CopyComplete
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación Final.exe
+C:\Users\Nicolas\Desktop\IDAT - GIT\c-shard\I - III Ciclo\Proyecto 1\Evaluación Final\obj\Debug\Evaluación Final.pdb
