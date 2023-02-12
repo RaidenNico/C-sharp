@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BibliotecaBd.Models.Inventario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="background-color: aquamarine;">Inventarios</h1>
+
+<p>
+    <a asp-action="Create">Registrar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Existencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comentarios)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Activo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdlibroNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdsucursalNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Existencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comentarios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdlibroNavigation.Idlibro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdsucursalNavigation.Idsucursal)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Idinventario" button class="btn btn-primary" type="submit">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Idinventario" button class="btn btn-primary" type="submit">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Idinventario" button class="btn btn-primary" type="submit">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

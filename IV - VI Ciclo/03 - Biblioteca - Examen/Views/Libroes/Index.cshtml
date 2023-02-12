@@ -1,0 +1,78 @@
+﻿@model IEnumerable<BibliotecaBd.Models.Libro>
+
+@{
+    ViewData["Title"] = "Libros";
+}
+
+<h1 style="background-color: aquamarine;">Libros</h1>
+
+<p>
+    <a asp-action="Create">Registrar un Nuevo Libro</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulolibro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Anio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comentarios)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Numpage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Activo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdeditorialNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulolibro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Anio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comentarios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numpage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdeditorialNavigation.Ideditorial)
+            </td>
+            <td>
+                   
+                    <a asp-action="Edit" asp-route-id="@item.Idlibro" button class="btn btn-primary" type="submit">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Idlibro" button class="btn btn-primary" type="submit">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Idlibro" button class="btn btn-primary" type="submit">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
